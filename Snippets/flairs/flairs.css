@@ -1,0 +1,93 @@
+/*Userflair*/
+
+.flair { background: url(%%flairsheet%%) no-repeat -9999px; border: 0; padding: 0; }
+.flair-glas1 {height: 25px; background-position: 0 0; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-glas2 {height: 25px; background-position: 0 -25px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-glas3 {height: 25px; background-position: 0 -50px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-glas4 {height: 25px; background-position: 0 -100px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-flasche {height: 25px; background-position: 0 -75px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-dose {height: 25px; background-position: 0 -125px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-mod {margin-left: 2px; height: 25px; background-position: 0 -150px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-stiefel {height: 25px; background-position: 0 -176px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-kasten {height: 25px; background-position: 0 -201px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+.flair-fass {height: 25px; background-position: 0 -226px; line-height: 25px; min-width: 25px; text-indent: 29px;}
+
+/*Linkflair*/
+
+.linkflair-nl .linkflairlabel {
+    background: url(%%nl-small%%) no-repeat;
+    border: 0;
+    height: 26px;
+    line-height: 26px;
+    min-width: 35px;
+    text-indent: 37px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.linkflair-de .linkflairlabel {
+    background: url(%%de-small%%) no-repeat;
+    border: 0;
+    height: 26px;
+    line-height: 26px;
+    min-width: 35px;
+    text-indent: 37px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.linkflair-be .linkflairlabel {
+    background: url(%%be-small%%) no-repeat;
+    border: 0;
+    height: 26px;
+    line-height: 26px;
+    min-width: 35px;
+    text-indent: 37px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+
+.linkflair-blank .linkflairlabel {
+    background: url(%%blankflair%%) no-repeat;
+    border: 0;
+    height: 26px;
+    line-height: 26px;
+    min-width: 35px;
+    text-indent: 1px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+/*Linkflair notification*/
+
+.post-submitter .link:not(.linkflair) .flairselectbtn { position: relative; }
+
+.post-submitter .link:not(.linkflair) .flairselectbtn:before {
+position: absolute;
+content: 'Please flair your post!';
+background: rgba(255,0,0,.7);
+color: #fff;
+top: -2em;
+left: -8em;
+height: 1.5em;
+padding: 0 .5em;
+line-height: 1.5;
+text-align: center; }
+
+.post-submitter .link:not(.linkflair) .flairselectbtn:after {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 1em .5em 0;
+border-color: rgba(255,0,0,.7) transparent transparent;
+top: -.8em;
+left: .3em;
+content: '';
+position: absolute; }
+
+/*Link filter*/
+
+html:lang(ge) .link:not(.linkflair-de){display: none}
+html:lang(ne) .link:not(.linkflair-nl){display: none}
+html:lang(bl) .link:not(.linkflair-be){display: none}
